@@ -1,0 +1,58 @@
+@media (max-width: 900px) {
+  body {
+    background-image: url('../images//bg-mobile.svg');
+    padding: 35px 40px 10px 40px ;
+  }
+  
+  .header {
+    margin: 0 0 40px 15px;
+  }
+
+  .header img {
+    width: 145px;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .main .box-image-mackups img {
+    width: 100%;
+  }
+
+  .main .box-text-description {
+    padding-top: 0;
+    padding-bottom: 20px;
+    justify-content: flex-end;
+  }
+  
+  .main .box-text-description h1 {
+    font-size: 25px;
+    max-width: 300px;
+    line-height: 40px;
+    margin: 0 auto;
+  }
+
+  .main .box-text-description p {
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 275px;
+    margin: 15px auto 25px auto;
+  }
+  
+  .main .box-text-description a {
+    align-self: center;
+    padding: 10px 80px 13px 80px;
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+  
+  .footer .social-contact ul li a {
+    font-size: 17px;
+    padding: 6px;
+  }
+}

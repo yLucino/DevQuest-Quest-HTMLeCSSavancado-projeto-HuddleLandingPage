@@ -1,0 +1,99 @@
+body {
+  background-color: var(--color-Violet);
+  background-image: url('../images//bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 60px 80px 0 80px;
+  display: grid;
+  grid-template-areas: 'header'
+                       'main'
+                       'footer';
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+/* HEADER */
+.header {
+  grid-area: header;
+  margin-bottom: 55px;
+}
+
+/* MAIN */
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: main;
+  justify-content: center;
+}
+
+.main .box-image-mackups img {
+  width: 91.5%;
+}
+
+.main .box-text-description {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.main .box-text-description h1 {
+  color: var(--color-Default);
+  font: 600 45px "Poppins";
+  max-width: 500px;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+
+.main .box-text-description p {
+  color: var(--color-Default);
+  font: 100 22px "Open Sans";
+  max-width: 600px;
+  line-height: 30px;
+  margin: 25px 0 35px 0;
+}
+
+.main .box-text-description a {
+  color: var(--color-Violet);
+  font: 400 15px "Open Sans";
+  letter-spacing: -0.2px;
+  background-color: var(--color-Default);
+  padding: 10px 50px 13px 50px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px var(--color-Shadow);
+  transition: .3s;
+  align-self: flex-start;
+}
+
+.main .box-text-description a:hover {
+  color: var(--color-Default);
+  background-color: var(--color-Soft-Magenta);
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  grid-area: footer;
+  justify-content: flex-end;
+}
+
+.footer .social-contact ul {
+  display: flex;
+}
+
+.footer .social-contact ul li a {
+  display: flex;
+  margin: 0 10px;
+  color: var(--color-Default);
+  border: 1px solid var(--color-Default);
+  font-size: 22px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.footer .social-contact ul li a:hover {
+  color: var(--color-Soft-Magenta);
+  border-color: var(--color-Soft-Magenta);
+  cursor: pointer;
+}
